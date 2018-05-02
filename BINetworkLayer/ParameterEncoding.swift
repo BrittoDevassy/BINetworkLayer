@@ -45,7 +45,7 @@ public enum ParameterEncoding {
 }
 
 
-public enum NetworkError : String, Error {
+public enum URLEncodingError : String, Error {
     case parametersNil = "Parameters were nil."
     case encodingFailed = "Parameter encoding failed."
     case missingURL = "URL is nil."

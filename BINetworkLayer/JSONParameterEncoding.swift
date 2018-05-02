@@ -16,7 +16,7 @@ public struct JSONParameterEncoder: ParameterEncoder {
                 urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             }
         }catch {
-            throw NetworkError.encodingFailed
+            throw URLEncodingError.encodingFailed
         }
     }
 }

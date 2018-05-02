@@ -10,7 +10,7 @@ import Foundation
 
 class ArtistApiManager: ApiManager {
     
-    func getNewMovies(page: Int, completion: @escaping (_ movie: [Artist]?,_ error: String?)->()){
+    func getPopularArtists(page: Int, completion: @escaping (_ artistsList: [Artist]?,_ error: String?)->()){
         
     }
 

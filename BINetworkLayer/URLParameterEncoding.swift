@@ -11,7 +11,7 @@ import Foundation
 public struct URLParameterEncoder: ParameterEncoder {
     public func encode(urlRequest: inout URLRequest, with parameters: ApiParameters) throws {
         
-        guard let url = urlRequest.url else { throw NetworkError.missingURL }
+        guard let url = urlRequest.url else { throw URLEncodingError.missingURL }
         
         if var urlComponents = URLComponents(url: url,
                                              resolvingAgainstBaseURL: false), !parameters.isEmpty {
